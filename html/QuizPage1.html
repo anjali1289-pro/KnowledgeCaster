@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1</title>
+    <link rel="stylesheet" href="/KnowledgeCaster/css/QuizPage1.css">
+
+</head>
+<body>
+    <div class="app">
+        <h2 ><u>Quiz 1</u></h2>
+        <div class="quize">
+            <h3 id="questions">1. Which of the following is an output device</h3>
+            <div id="answer-buttons">
+                <button class="btn" onclick="selectAnswer(this, 'Keyboard', false)">Keyboard</button>
+                <button class="btn" onclick="selectAnswer(this, 'Printer', true)" >Printer </button>
+                <button class="btn"onclick="selectAnswer(this, 'Joy Stick', false)">Joy Stick</button>
+                <button class="btn" onclick="selectAnswer(this, 'None of the above', false)">None of the above</button>
+            </div>
+
+            <a  href="/KnowledgeCaster/html/QuizPage2.html" ><input id="next-btn" Value="NEXT" ></a>
+
+        </div>
+        
+    </div>
+    <script src="QuizPage.js"></script>
+</body>
+</html>

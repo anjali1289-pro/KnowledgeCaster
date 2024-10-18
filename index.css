@@ -1,0 +1,126 @@
+body{
+    background-image: url('Icon\ Grid.svg');
+
+}
+.well{
+    height: 50px;
+    margin: center;
+
+    font-size: 50px;
+    margin-top: 80px;
+    text-shadow: 100px 100px 100px 100px solid black;
+    /* Display the image in the background */
+    background-color: rgb(231, 192, 21);
+    background-size: contain;
+    /* to dispaly the image in the text */
+    -webkit-background-clip: text;
+    /* to make the image transparent */
+    -webkit-text-fill-color: transparent;
+
+}
+.login{
+    border:none;
+    width:400px;
+    height: 500px;
+    background: rgba(15, 15, 15, 0.533);
+    backdrop-filter: blur(0.5px);
+    display: flex;
+    color: white;
+    border-radius: 20px;
+   
+    background-size: cover;
+    overflow: hidden;
+    margin-left: 40%;
+    margin-top: 80px;
+    
+    
+}
+
+form{
+   
+    display: block;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(40%);
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+    
+
+}
+
+h1{
+    text-decoration: underline;
+    font-weight:bold;
+    color:rgba(255, 255, 255, 0.837);
+    font-weight: normal;
+    font-size: 34px;
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+    text-align: center;
+}
+label{
+    color: rgba(255,255,255,0.8);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+.label{
+    color: rgba(255,255,255,0.8);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+input{
+    background: rgba(255,255,255,0.3);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border:none;
+    margin-bottom: 20px;
+    color:white;
+}
+.bttn{
+    background-color: rgb(0, 64, 255);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin:10px 0px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    text-align: center;
+    width:16em; 
+    cursor: pointer;
+}
+.bttn:hover{ 
+    background: rgb(75, 142, 229);
+    
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+p{
+    color: rgba(255,255,255,0.8);
+    
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+.ab{
+    color: blueviolet;
+    
+}
+.ab:hover{
+    color: blue;
+}
+

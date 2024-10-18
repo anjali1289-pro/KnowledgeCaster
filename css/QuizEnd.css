@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    border:none;
+    
+    max-width: 700px;
+    padding:30px;
+    height:19em;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    /* overflow: hidden;  */
+    margin:100px auto 0;
+    padding-left: 60px;
+    background:url('/KnowledgeCaster/Images/Circuit\ Board.svg') ;
+    border-radius: 40px;
+    background-size:cover;
+    text-align: center;
+    font-size: 35px;
+    
+
+}
+ h1{
+    color:white;
+    /* Display the image in the background */
+   background-color: rgba(255, 188, 80, 0.712);
+   background-size:cover;
+   background-repeat: no-repeat; 
+   font-family: 'Times New Roman', Times, serif;
+   /* to dispaly the image in the text */
+   -webkit-background-clip: text;
+   /* to make the image transparent */
+   -webkit-text-fill-color:transparent;
+   text-align: center;  
+   margin-top: 20%;
+   
+} 

@@ -1,0 +1,113 @@
+*{
+    margin:10;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+
+}
+body{
+    background: url('/KnowledgeCaster/Images/Polygon\ Luminary.svg'); 
+}
+
+.app{
+    border:none;
+    width:90%;
+    max-width: 600px;
+    padding:30px;
+    /* background-position: center; */
+    background-color:  rgba(15, 15, 15, 0.533);
+    backdrop-filter: blur(00.5px);
+    color: white;
+    border-radius: 10px;
+    
+    background-size: cover;
+    /* overflow: hidden; */ 
+    margin:65px auto 0;
+    font-size: 25px;
+    padding-left: 60px;
+    
+}
+.app h2{
+    font-weight: 600px;
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+.quize{
+    padding: 10px 10px;
+}
+.quize h3{
+    font-size: 25px;
+    font-weight: 600px;
+    margin-top: 0;
+
+}
+.btn{
+    background: #fff;
+    color:#222;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 10px 0px 0px;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover:not([disabled]){
+    background: #267dbf;
+    color: #fff;
+    cursor: pointer;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background: #5784cc;
+    color:#fff;
+    font-weight: 500px;
+    width: 150px;
+    border:0;
+    padding:10px;
+    margin:20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 36%;
+    margin-top: 15%;
+    text-align: center;
+    
+}
+#next-btn:hover{ 
+    background-color: rgb(0, 64, 255);
+    cursor: pointer;
+}
+#prev-btn{
+    background: #5784cc;
+    color:#fff;
+    font-weight: 500px;
+    width: 150px;
+    border:0;
+    padding:10px;
+    margin:20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    
+}
+#prev-btn:hover{ 
+    background-color: rgb(0, 64, 255);
+   
+}
+.btn.correct{
+    background-color: rgba(0, 128, 0, 0.702);
+    color: white;
+}
+.btn.wrong{
+    background: #f80404ad;
+    color: white;
+}
+.btn.disabled {
+    pointer-events: none;
+}

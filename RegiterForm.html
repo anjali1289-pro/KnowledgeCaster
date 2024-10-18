@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="RegisterForm.css">
+    
+
+</head>
+<body>
+    <div id="div">
+        
+        <form class="form" id="registerForm" onsubmit="return register()">
+            
+            <h2><u>Register Here!</u></h2>
+            <lable >Name</lable>
+            <input  type="text" id="name" placeholder="Enter your name" required>
+            <br><br>
+            <lable>Date of Birth</lable>
+            <input type="date" id="dob" placeholder="DOB" required>
+            <br><br>
+            
+            <lable>Address</lable>
+            <textarea aria-colspan="20" id="address" aria-rowspan="5" required></textarea>
+            <br><br>
+            <lable>Email ID: </lable>
+            <input type="email" placeholder="Enter the email" required>
+            <br><br>
+            <lable>Password: </lable>
+            <input type="password" placeholder="Enter the password" id="password" required>
+            <br><br>
+            <lable>Conform Password: </lable>
+            <input type="password" placeholder="Conform password" id="confirmPassword" required>
+            <br><br>
+            <lable>Gender : </lable>
+            <input type="radio" value="male" name="gender">Male
+            <input type="radio" value="Female" name="gender">Female
+            <input type="radio" value="Other" name="gender">Other
+            <br><br>
+            <lable>Course :</lable>
+            <select id="course" required>
+                <option value=""></option>
+                <option >FrontEnd</option>
+                <option>BackEnd</option>
+                <option>DataBase</option>
+                <option >Testing</option>
+            </select>
+            <br><br>
+            <input type="checkbox" id="agreement" required>I agree to above informarion 
+            <br><br>
+
+            <a  href="index.html" ><input class="bttn" Value="Register" ></a>
+
+           <p>If you have any account <a class="ab"  href="index.html">Click Here to Login</a> </p>
+        </form>
+    </div>
+    <script>
+        function register() {
+            const name = document.getElementById('name').value;
+            const dob = document.getElementById('dob').value;
+            const address = document.getElementById('address').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const agreement = document.getElementById('agreement').checked;
+
+            if (name && dob && address && email && password && confirmPassword && agreement && password === confirmPassword) {
+                window.location.href = 'Home.html';
+                return false;
+            } else {
+                alert('Please fill all fields correctly.');
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

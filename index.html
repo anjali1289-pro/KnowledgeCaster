@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontPage</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body >
+    <div>
+    <h1 class="well">WELCOME TO QUIZ HUNT! </h1>
+    <div class="login">
+        
+        <form id="loginForm" onsubmit="return login()">
+            <h1>Login Here!</h1>
+            <label>UserName</label>
+            <input type="text" id="username" required>
+            <lable class="label">Password</lable>
+            <input type="password" id="password" required>
+
+            <a  href="/KnowledgeCaster/html/QuizPage1.html" target="_blank"><input class="bttn" Value="Login"></a>
+
+            <p>Don't have any account <a class="ab" href="RegiterForm.html">Click Here to Register</a> </p>
+        </form>
+         
+    </div>
+</div>
+<script>
+    function login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        if (username && password) {
+            window.location.href = 'QuizPage1.html';
+            return false;
+        } else {
+            alert('Please enter both username and password.');
+            return false;
+        }
+    }
+</script>
+</body>
+</html>
